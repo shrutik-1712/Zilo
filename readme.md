@@ -1,9 +1,10 @@
 # Zilo Fashion Store - AI Shopping Assistant
 
-An AI-powered chatbot that helps customers find the perfect outfit based on their needs and occasions.
-
 ![Main Interface](main.png)
 ![Product Recommendations](test.png)
+
+An AI-powered chatbot that helps customers find the perfect outfit based on their needs and occasions.
+
 ## Features
 
 - Gender-specific product recommendations (Men's & Women's collections)
@@ -11,6 +12,13 @@ An AI-powered chatbot that helps customers find the perfect outfit based on thei
 - Smart product suggestions based on occasion, style, and price
 - Clean, responsive chat interface
 - Direct links to product pages
+- scrape using a curl command for it 
+```curl
+curl -s 'https://zilo.one/c/hot-deals-women?collection_name=Hot%20Deals%20-%20Women' \
+  -H 'x-zilo-pincode: 400069' \
+  -H 'x-zilo-city: Mumbai' > page.html
+```
+-using google ai studio i made like a json for page 1 of hot deals of both men and women 
 
 ## Tech Stack
 
@@ -129,6 +137,7 @@ Check if database is loaded and API is running.
 4. AI analyzes and selects 2-3 best matches
 5. Backend returns recommendations with explanation
 6. Frontend displays product cards
+7. this is just for testing purposes that i made for making this thing works.
 
 ## Future Enhancements
 
@@ -138,6 +147,7 @@ Check if database is loaded and API is running.
 - User preferences
 - Vector embeddings for larger catalogs
 - PostgreSQL for production
+- Location based filtering 
 
 ## License
 
