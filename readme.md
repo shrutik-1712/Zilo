@@ -86,7 +86,7 @@ npm install tailwindcss @tailwindcss/vite
 
 4. Run the app:
 ```bash
-npm start
+npm run dev
 ```
 
 Frontend runs on `http://localhost:3000`
